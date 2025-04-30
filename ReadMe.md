@@ -10,9 +10,15 @@ Stay tuned as we gradually unlock Allrounder's full potential, one feature at a 
 
 Right now, you can use Allrounder to quickly look up the Wavu Rank of Tekken players.
 
-### Usage
+## Usage
 
-Open your terminal or command prompt and navigate to the directory where the `Allrounder` executable is located. Then, use the `rank` command followed by the player's steam URL (numbers only), Tekken-ID (with or without dash):
+1.  Download the `Allrounder.zip`.
+2.  Place all downloaded files in the same directory.
+3.  Open your command prompt or terminal and navigate to that directory.
+4.  Run the application using: `Allrounder.exe <command> [options]`
+
+Tekken Example:
+ `Allrounder.exe rank`  followed by the player's steam URL (numbers only), Tekken-ID (with or without dash):
 
 ```cmd
 Allrounder.exe rank "YourTekkenID"
