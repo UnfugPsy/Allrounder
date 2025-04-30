@@ -14,5 +14,5 @@ Right now, you can use Allrounder to quickly look up the Wavu Rank of Tekken pla
 
 Open your terminal or command prompt and navigate to the directory where the `Allrounder` executable is located. Then, use the `rank` command followed by the player's steam URL (numbers only), Tekken-ID (with or without dash):
 
-```bash
-Allrounder rank "YourTekkenID"
+```cmd
+Allrounder.exe rank "YourTekkenID"
