@@ -1,0 +1,80 @@
+# Compiled Object files
+*.o
+*.obj
+*.lib
+*.dylib
+*.so
+*.a
+*.exe
+*.dll
+
+# Visual Studio related files
+.vs/
+*.suo
+*.user
+*.sln
+*.csproj.user
+*.vcxproj.user
+*.vcxproj.filters
+*.vcxproj.local
+*.DotSettings.user
+*.resharper.*
+
+# JetBrains Rider related files
+.idea/
+*.iml
+
+# Build output directories
+bin/
+obj/
+publish/
+out/
+build/
+
+# Package management
+packages/
+*.nupkg
+project.lock.json
+
+# Runtime environment specific files (if any)
+# .env
+# config/local.ini
+
+# Log files (if your CLI generates them)
+*.log
+
+# Temporary files
+*.tmp
+._*
+
+# OS Specific files
+.DS_Store
+Thumbs.db
+
+# Node.js specific (if your CLI uses Node.js for any tooling)
+node_modules/
+
+# Python specific (if your CLI uses Python for any tooling)
+__pycache__/
+*.pyc
+*.pyd
+.python-version
+env/
+venv/
+
+# Go specific (if your CLI is written in Go)
+go.mod
+go.sum
+
+# Other build/tooling specific directories/files
+# Add any other directories or files your build process or tools might create
+
+# Ignore self-contained deployment artifacts (if you don't want to track them)
+# self-contained/
+
+# Example: Ignore specific build outputs if needed
+# bin/Debug/net8.0/yourcli.pdb
+# bin/Release/net8.0/yourcli.pdb
+
+# Keep this at the end for any specific exceptions
+!/path/to/keep/this/file.txt
