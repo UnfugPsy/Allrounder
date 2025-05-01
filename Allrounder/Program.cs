@@ -75,9 +75,7 @@ internal class Program
 
   private static void ReadUserArgument(string[] cmdArgs, int index)
   {
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
-    string input = Console.ReadLine();
-#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+    var input = Console.ReadLine();
     if (input != null)
     {
       Console.WriteLine($"<=== your Input: {input} as Argument {index} ===>");

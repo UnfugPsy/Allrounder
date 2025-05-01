@@ -25,22 +25,17 @@ namespace Allrounder
           string extractedId = GetSteamIdFromURL(_input);
           Helper.OpenUrlInBrowser(_WAVUSEARCHURI + extractedId);
         }
-        else if (Regex.IsMatch(_input, _inputPattern))
-        {
-          Console.WriteLine($"<=== Tekken-ID found! ===>");
-          ChoseRankedSite();
-        }
-        else if (Regex.IsMatch(_input, _inputPatternShort))
+        else if (Regex.IsMatch(_input, _inputPattern) || Regex.IsMatch(_input, _inputPatternShort))
         {
           Console.WriteLine($"<=== Tekken-ID found! ===>");
           ChoseRankedSite();
         }
         else
         {
-          Console.WriteLine($"<=== your input was not a valid use \n" +
+          Console.WriteLine($"<=== your input was not a valid use ===>\n" +
               $"  rank <STEAM_URL> \n" +
               $"  or\n" +
-              $"  rank <TEKKEN_ID>! ===>");
+              $"  rank <TEKKEN_ID>!");
           Console.WriteLine($"<=== Press to exit! ===>");
           Console.ReadKey();
         }
@@ -50,7 +45,7 @@ namespace Allrounder
     private void ChoseRankedSite()
     {
       Console.WriteLine($"<=== wank.wavu = 0 | EWGF.gg = 1 ===>");
-      string id = "";
+      string id;
       if (_input.Length > 12)
       {
         id = _input.Replace("-", "");
@@ -61,8 +56,8 @@ namespace Allrounder
       }
 
       string targetUrl = _WAVUURI + id;
-      string userInput = Console.ReadLine();
 
+      var userInput = Console.ReadLine();
       if (userInput != null)
       {
         switch (userInput)
